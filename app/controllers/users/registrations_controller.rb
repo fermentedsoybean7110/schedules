@@ -10,9 +10,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # end
 
   # POST /resource
-  # def create
-  #   super
-  # end
+  def create
+    @user = User.create(user_params)
+    redirect_to root_path
+  end
 
   # GET /resource/edit
   # def edit
@@ -59,4 +60,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+  private
+  def user_params
+    params.require(:user).permit(:name, :email, :password)
+  end
 end
