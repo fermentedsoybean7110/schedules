@@ -4,6 +4,7 @@ Rails.application.routes.draw do
     :sessions => 'users/sessions'   
   }
   resources :users, only: [:new, :create] 
+  resources :events
 
   root "events#index"
   

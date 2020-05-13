@@ -1,0 +1,13 @@
+.side
+  .side__title
+    Schedules
+  .side__user
+    = current_user.name
+    .side__user__icon
+      = link_to "#" , class: "user-edit" do
+        = icon('fas', 'user-edit')
+      = link_to destroy_user_session_path, method: :delete do
+        = icon('fas', 'sign-out-alt')
+  .side__info
+    .side__info__register
+      = link_to 'スケジュール登録', "#"
