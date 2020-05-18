@@ -137,13 +137,13 @@ input.login-edit {
 }
 .edit-name-label {
   font-size: 20px;
-  align-items: center;
+  line-height: 20px;
   padding: 0 20px;
 }
 
 .edit-email-label {
   font-size: 20px;
-  align-items: center;
+  line-height: 20px;
   padding: 0 20px;
 }
 
@@ -157,17 +157,16 @@ input.login-edit {
   height: 30px;
 }
 
+.error-devise {
+  font-size: 20px;
+  text-align: center;
+  color: red;
+}
 .flash-edit {
+  padding: 30px 0;
   height: 30px;
   width: 100%;
   font-size: 20px;
   text-align: center;
   color: red;
 }
-
-.error-devise {
-  text-align: center;
-  font-size: 20px;
-  color: red;
-}
-
