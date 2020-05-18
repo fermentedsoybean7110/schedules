@@ -3,8 +3,6 @@ json.array!(@events) do |event|
   json.start event.start_date
   json.end event.end_date
   json.url event_url(event, format: :html)
-<<<<<<< Updated upstream
-=======
 
   if event.genre == "fun"
     json.color "#90ee90"
@@ -18,5 +16,4 @@ json.array!(@events) do |event|
     json.color "#ff0000"
   end
 
->>>>>>> Stashed changes
 end

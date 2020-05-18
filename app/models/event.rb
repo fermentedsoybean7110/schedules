@@ -1,7 +1,5 @@
 class Event < ApplicationRecord
   belongs_to :user
-<<<<<<< Updated upstream
-=======
   enum genre:{ work: 1, fun: 2 }
   
   with_options presence: true do
@@ -20,5 +18,4 @@ class Event < ApplicationRecord
 
   # end
 
->>>>>>> Stashed changes
 end

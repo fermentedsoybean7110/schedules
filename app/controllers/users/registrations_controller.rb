@@ -9,31 +9,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   #   @user = User.find(current_user.id)
   # end
 
-<<<<<<< Updated upstream
-  # POST /resource
-  def create
-    @user = User.create(user_params)
-    redirect_to root_path
-  end
-
-  # GET /resource/edit
-  # def edit
-  #   super
-  # end
-
-  # PUT /resource
-  # def update
-  #   super
-  # end
-
-  # DELETE /resource
-  # def destroy
-  #   super
-=======
   # def update
   #   @user = User.update(current_user.id)
   #   return redirect_to root_path
->>>>>>> Stashed changes
   # end
 
   private

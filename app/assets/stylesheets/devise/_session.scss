@@ -3,25 +3,6 @@
 }
 .body {
   display: flex;
-<<<<<<< Updated upstream
-  justify-content: center;
-  padding-top: 300px;
-  margin:0 auto;
-  width: 60vw;
-  height: 60vh;
-  border: solid 1px;
-  border-color:  rgb(91, 240, 42);
-  position: relative;
-  .login {
-    font-size: 40px;
-    display: flex;
-    padding: 20px 0;
-    &__field {
-      width: 50%;
-      text-align: center;
-      &__box {
-        height: 20px;
-=======
   width: 45%;
   height:100%;
   margin: 0 auto;
@@ -46,7 +27,6 @@
         }
       }
       &__main {
->>>>>>> Stashed changes
         width: 300px;
         display: flex;
         justify-content: center;
@@ -72,12 +52,6 @@
     right: 0;
   }
 }
-<<<<<<< Updated upstream
-  
-#user_email {
-  height: 20px;
-  width: 160px;
-=======
 input.login {
   width: 80px;
   height: 30px;
@@ -86,7 +60,6 @@ input.login {
   font-weight: bold;
   position: absolute;
   right: 40px;
->>>>>>> Stashed changes
 }
 
 #user_password {

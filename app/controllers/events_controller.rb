@@ -4,10 +4,7 @@ class EventsController < ApplicationController
 
 
   def index
-<<<<<<< Updated upstream
-=======
     @events = Event.where( user_id: current_user.id )
->>>>>>> Stashed changes
   end
 
   def new
@@ -23,8 +20,6 @@ class EventsController < ApplicationController
     end
   end
 
-<<<<<<< Updated upstream
-=======
   def show
     @event = Event.find(params[:id])
   end
@@ -58,5 +53,4 @@ class EventsController < ApplicationController
   end
 
 
->>>>>>> Stashed changes
 end
