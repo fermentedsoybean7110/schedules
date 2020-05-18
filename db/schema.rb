@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< Updated upstream
 ActiveRecord::Schema.define(version: 20200503110548) do
+=======
+ActiveRecord::Schema.define(version: 20200515071245) do
+>>>>>>> Stashed changes
 
   create_table "events", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "title",      null: false
@@ -20,6 +24,10 @@ ActiveRecord::Schema.define(version: 20200503110548) do
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+<<<<<<< Updated upstream
+=======
+    t.integer  "genre",      null: false
+>>>>>>> Stashed changes
     t.index ["user_id"], name: "index_events_on_user_id", using: :btree
   end
 

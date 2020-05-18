@@ -1,0 +1,23 @@
+%h2.header
+  ユーザー情報の編集
+.flash-edit
+  - if flash
+    = flash[:alert]
+= form_for(current_user) do |f|
+  .editform
+    .editfields
+      .editfield
+        .editfield__label
+          = f.label :name, "名前", class: "edit-name-label"
+        .editfield__text
+          = f.text_field :name, autofocus: true, class: "edit-name-text"
+      .editfield
+        .editfield__label
+          = f.label :email, "Eメール", class: "edit-email-label"
+        .editfield__text
+          = f.email_field :email, autofocus: true, class: "edit-email-text"
+    .actions
+      = f.submit "更新", class: "login-edit"
+.link
+  トップページに
+  = link_to "戻る", root_path

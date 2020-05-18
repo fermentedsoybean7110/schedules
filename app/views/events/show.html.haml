@@ -1,0 +1,28 @@
+%p#notice= notice
+.show
+  .show__block
+    .record
+      %b.showname-genre ジャンル:
+      - if @event.genre == "work"
+        仕事
+      - else
+        プライベート
+    .record
+      %b.showname タイトル:
+      = @event.title
+    .record
+      %b.showname 内容:
+      = @event.body
+    .record
+      %b.showname 開始:
+      = @event.start_date.strftime("%Y-%m-%d %H:%M")
+    .record
+      %b.showname 終了:
+      = @event.end_date.strftime("%Y-%m-%d %H:%M")
+    .commands
+      .command
+        = link_to '編集', edit_event_path(@event)
+        \|
+        = link_to '戻る', root_path
+        \|
+        = link_to '削除', @event, method: :delete, data: { confirm: '本当に削除しますか?' }

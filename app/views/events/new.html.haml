@@ -1,0 +1,53 @@
+.wrapper
+  .side
+    .side__title
+      Schedules
+    .side__center
+      .side__center__user
+        = current_user.name
+      .side__center__icon
+        .user-edit
+          = link_to edit_user_path(@user) do
+            = icon('fas', 'user-edit')
+        .user-logout
+          = link_to destroy_user_session_path, method: :delete do
+            = icon('fas', 'sign-out-alt')
+    .side__info
+      .side__info__back
+        = link_to "戻る", root_path
+  .main
+    .flash-event
+      - if flash
+        = flash[:alert]
+    .new
+      = form_for @event do |f|
+        .forms
+          .form-subject
+            スケジュール入力フォーム
+          .eventform__genre
+            .eventform__genre__label
+              = f.label :genre_id, "ジャンル"
+            .eventform__genre__main
+              = f.select :genre, Event.genres.keys.map { |k| [t("enums.event.genre.#{k}"),k]}, {include_blank: "選択してください"}
+          .eventform__title
+            .eventform__title__label
+              = f.label :title, "タイトル"
+            .eventform__title__main
+              = f.text_field :title, class: "formsize"
+          .eventform__body
+            .eventform__body__label
+              = f.label :body, "内容"
+            .eventform__body__main
+              = f.text_field :body, class: "formsize"
+          .eventform__start
+            .eventform__start__label
+              = f.label :start_date, "開始"
+            .eventform__start__main
+              = f.datetime_field :start_date, class: "formsize"
+          .eventform__end
+            .eventform__end__label
+              = f.label :end_date, "終了"
+            .eventform__end__main
+              = f.datetime_field :end_date, class: "formsize"
+          .eventform__submit
+            = f.submit "記入", class: "submit-btn"

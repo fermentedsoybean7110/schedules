@@ -1,6 +1,7 @@
 .side
   .side__title
     Schedules
+<<<<<<< Updated upstream
   .side__user
     = current_user.name
     .side__user__icon
@@ -8,6 +9,18 @@
         = icon('fas', 'user-edit')
       = link_to destroy_user_session_path, method: :delete do
         = icon('fas', 'sign-out-alt')
+=======
+  .side__center
+    .side__center__user
+      = current_user.name
+    .side__center__icon
+      .user-edit
+        = link_to edit_user_path(current_user) do
+          = icon('fas', 'user-edit')
+      .user-logout
+        = link_to destroy_user_session_path, method: :delete do
+          = icon('fas', 'sign-out-alt')
+>>>>>>> Stashed changes
   .side__info
     .side__info__register
       = link_to 'スケジュール登録', "#"

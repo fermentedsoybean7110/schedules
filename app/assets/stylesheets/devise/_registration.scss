@@ -1,0 +1,173 @@
+.regform {
+  display: flex;
+  width: 45%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 30px 50px;
+  border: 5px solid;
+  border-color: rgb(72, 185, 34);
+  position: relative;
+  .regfields {
+    margin-left: 20px;
+    .regfield {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 10px;
+    }
+    &__label {
+      width: 200px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    &__text {
+      width: 300px;
+      height: 30px;
+    }
+  }
+}
+input.login-reg {
+width: 80px;
+height: 30px;
+margin-top: 125px;
+margin-right: 10px;
+background-color: rgb(231, 231, 231);
+font-weight: bold;
+}
+.link {
+width: 100vw;
+height: 10vh;
+padding-top: 50px;
+font-size: 20px;
+text-align: center;
+font-weight: bold;
+margin-bottom: 5%;
+}
+
+.reg-name-label {
+  font-size: 24px;
+  line-height: 24px;
+}
+.reg-email-label {
+  font-size: 24px;
+  line-height: 24px;
+}
+.reg-pass-label {
+  margin-right: 15px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.reg-pass-conf-label {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.reg-name-field {
+  width: 200px;
+  height: 30px;
+}
+.reg-email-field {
+  width: 200px;
+  height: 30px;
+}
+.reg-pass-field {
+  width: 200px;
+  height: 30px;
+}
+
+.reg-pass-conf-field {
+  width: 200px;
+  height: 30px;
+}
+
+.fontsize {
+  font-size: 20px;
+  line-height: 20px;
+  padding-left: 12px;
+  &--confirm {
+    padding-left: 25px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+input.login-reg {
+  width: 80px;
+  height: 30px;
+  margin-top: 125px;
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  font-weight: bold;
+  right: 80px;
+}
+
+input.login-edit {
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(231, 231, 231);
+  font-weight: bold;
+  margin: 55px 0 0 50px;
+}
+
+.editform {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 30px 50px;
+  border: 5px solid;
+  border-color: rgb(72, 185, 34);
+  .editfields {
+    margin-left: 20px;
+    .editfield {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 10px;
+    }
+    &__label {
+      width: 200px;
+      height: 30px;
+    }
+    &__text {
+      width: 300px;
+      height: 30px;
+    }
+  }
+}
+.edit-name-label {
+  font-size: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.edit-email-label {
+  font-size: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.edit-name-text {
+  width: 300px;
+  height: 30px;
+}
+
+.edit-email-text {
+  width: 300px;
+  height: 30px;
+}
+
+.flash-edit {
+  height: 30px;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  color: red;
+}
+
+.error-devise {
+  text-align: center;
+  font-size: 20px;
+  color: red;
+}
+

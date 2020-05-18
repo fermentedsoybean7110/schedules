@@ -3,6 +3,7 @@
 }
 .body {
   display: flex;
+<<<<<<< Updated upstream
   justify-content: center;
   padding-top: 300px;
   margin:0 auto;
@@ -20,6 +21,32 @@
       text-align: center;
       &__box {
         height: 20px;
+=======
+  width: 45%;
+  height:100%;
+  margin: 0 auto;
+  padding: 75px;
+  border: 5px solid;
+  border-color: rgb(72, 185, 34);
+  position: relative;
+  .fields {
+    .field {
+      display: flex;
+      padding: 20px 0;
+      &__label {
+        width: 200px;
+        height: 30px;
+        .reg-email-label {
+          font-size: 24px;
+          line-height: 24px;
+        }
+        .reg-password-label {
+          font-size: 24px;
+          line-height: 24px;
+        }
+      }
+      &__main {
+>>>>>>> Stashed changes
         width: 300px;
         display: flex;
         justify-content: center;
@@ -45,10 +72,21 @@
     right: 0;
   }
 }
+<<<<<<< Updated upstream
   
 #user_email {
   height: 20px;
   width: 160px;
+=======
+input.login {
+  width: 80px;
+  height: 30px;
+  margin-top: 55px;
+  background-color: rgb(231, 231, 231);
+  font-weight: bold;
+  position: absolute;
+  right: 40px;
+>>>>>>> Stashed changes
 }
 
 #user_password {

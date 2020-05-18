@@ -1,0 +1,44 @@
+-# %h2.header
+-#   ユーザー情報の編集
+-# = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+-#   = render "devise/shared/error_messages", resource: resource
+-#   .editform
+-#     .editfields
+-#       .editfield
+-#         .editfield__label
+-#           = f.label :name, "名前", class: "reg-name-label"
+-#         .editfield__text
+-#           = f.text_field :name, autofocus: true, autocomplete: "name", class: "reg-name-field"
+-#       .editfield
+-#         .editfield__label
+-#           = f.label :email, "Eメール", class: "reg-email-label"
+-#         .editfield__text
+-#           = f.email_field :email, autofocus: true, autocomplete: "email", class: "reg-email-field"
+-#       .editfield
+-#         .editfield__label
+-#           = f.label :password, "パスワード", class: "reg-pass-label"
+-#           .fontsize
+-#             (
+-#             =@minimum_password_length
+-#             字以上)
+-#         .editfield__text
+-#           = f.password_field :password, autocomplete: "new-password", class: "reg-pass-field"
+-#       .editfield
+-#         .editfield__label
+-#           = f.label :password_confirmation, "パスワード", class: "reg-pass-conf-label"
+-#           .fontsize--confirm
+-#             (確認用)
+-#         .editfield__text
+-#           = f.password_field :password_confirmation, autocomplete: "new-password", class: "reg-pass-conf-field"
+-#       .edit-anounce
+-#         更新のために現在のパスワードを入力してください。
+-#       .editfield
+-#         .editfield__label
+-#           = f.label :current_password, "パスワード", class: "reg-pass-conf-label"
+-#         .editfield__text
+-#           = f.password_field :current_password, autocomplete: "current-password", class: "reg-pass-conf-field"
+-#     .actions
+-#       = f.submit "更新", class: "login-edit"
+-# .link
+-#   トップページに
+-#   = link_to "戻る", :back

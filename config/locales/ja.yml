@@ -1,0 +1,6 @@
+ja:
+  enums:
+    event:
+      genre:
+        work: "仕事"
+        fun: "プライベート"

@@ -58,4 +58,15 @@ gem "devise"
 gem 'momentjs-rails', '>= 2.9.0'
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
 gem 'bootstrap-sass'
+<<<<<<< Updated upstream
 gem 'fullcalendar-rails'
+=======
+gem 'fullcalendar-rails'
+group :production do
+  gem 'pg'
+end
+gem 'enum_help'
+gem 'rails-i18n'
+gem 'devise-i18n'
+gem 'devise-i18n-views'
+>>>>>>> Stashed changes
