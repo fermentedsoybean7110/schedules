@@ -5,9 +5,7 @@
     .regfields
       .regfield
         .regfield__label
-          = f.label :name, "名前", class: "reg-name-label"
-          .fontsize
-            (6文字以内)
+          = f.label :name, "名前(6文字以内)", class: "reg-name-label"
         .regfield__text
           = f.text_field :name, autofocus: true, autocomplete: "name", class: "reg-name-field"
       .regfield
@@ -17,18 +15,12 @@
           = f.email_field :email, autofocus: true, autocomplete: "email", class: "reg-email-field"
       .regfield
         .regfield__label
-          = f.label :password, "パスワード", class: "reg-pass-label"
-          .fontsize
-            (
-            =@minimum_password_length
-            字以上)
+          = f.label :password, "パスワード(6文字以上)", class: "reg-pass-label"
         .regfield__text
           = f.password_field :password, autocomplete: "new-password", class: "reg-pass-field"
       .regfield
         .regfield__label
-          = f.label :password_confirmation, "パスワード", class: "reg-pass-conf-label"
-          .fontsize
-            (確認用)
+          = f.label :password_confirmation, "パスワード(確認用)", class: "reg-pass-conf-label"
         .regfield__text
           = f.password_field :password_confirmation, autocomplete: "new-password", class: "reg-pass-conf-field"
     .actions
