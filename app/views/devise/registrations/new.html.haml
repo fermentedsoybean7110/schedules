@@ -6,6 +6,8 @@
       .regfield
         .regfield__label
           = f.label :name, "名前", class: "reg-name-label"
+          .fontsize
+            (6文字以内)
         .regfield__text
           = f.text_field :name, autofocus: true, autocomplete: "name", class: "reg-name-field"
       .regfield
