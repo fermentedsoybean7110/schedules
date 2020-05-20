@@ -11,6 +11,9 @@
   タスク管理ができるようなアプリを作りたいと思ったため、プログラミングスクールで学習した言語を用いてスケジュール管理アプリを作成しました。
 ## DEMO
   ![トップページ](app/assets/images/index.png)
+  ![登録ページ](app/assets/images/new.png)
+  ![ログインページ](app/assets/images/login.png)
+  ![詳細ページ](app/assets/images/show.png)
 
 ## 工夫したポイント
   - 記入するスケジュールのジャンルによって色が変わるように条件を定義した。
