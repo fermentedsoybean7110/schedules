@@ -1,24 +1,60 @@
-# README
+# アプリ名
+  schedules
+## 概要
+  ログイン機能が実装された。スケジュール管理アプリです。以下のページで確認できます。
+## 本番環境
+  - url : https://serene-plains-01710.herokuapp.com/
+  - テスト用アカウント
+      email : test@test.com
+      pass : testtest
+## 制作背景
+  タスク管理ができるようなアプリを作りたいと思ったため、プログラミングスクールで学習した言語を用いてスケジュール管理アプリを作成しました。
+## DEMO
+  ![トップページ](app/assets/images/index.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 工夫したポイント
+  - 記入するスケジュールのジャンルによって色が変わるように条件を定義した。
+  - ジャンルに関わらず現在より過去のものは全て赤色に変化するようにした。
+  - Ruby on Railsのgemであるdeviseを用いてログイン機能を実装した。
+  - JavascriptのライブラリーのFullCalendarを導入してカレンダーを表示させた。
 
-Things you may want to cover:
+## 使用技術
+  - Haml
+  - Sass
+  - jQuery
+  - Ruby on Rails
+  - Heroku
+  - PostgreSQL
 
-* Ruby version
+## 課題や今後実装したい機能
+  - 現在より過去のものはカレンダーに記入できないようにする。
+  - 開始時間が終了時間が後の場合記入できないようにする。
 
-* System dependencies
+## DB設計
 
-* Configuration
+### Usersテーブル
+|Column|Type|options|
+|:----:|:--:|:-----:|
+|name|string|null: false|
+|email|string|null: false, default: ""|
+|encrypted_password|string|null: false, default: ""|
+|reset_password_token|string|
+|reset_password_sent_at|datetime|
+|remember_created_at|datetime|
 
-* Database creation
+#### Assosiation 
+  - has_many :events
 
-* Database initialization
+### Eventsテーブル
+|Column|Type|options|
+|:----:|:--:|:-----:|
+|genre|integer|null: false|
+|title|string|null: false|
+|body|string|null: false|
+|start_date|datetime|null: false|
+|end_date|datetime|null: false|
+|user_id|references|foreign_key: true|
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### Assosiation 
+  - belongs_to :user
+  - enum genre:{ work: 1, fun: 2 }
