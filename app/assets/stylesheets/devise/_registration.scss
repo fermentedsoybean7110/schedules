@@ -1,3 +1,29 @@
+@mixin reg-label() {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@mixin reg-field() {
+  width: 200px;
+  height: 30px;
+}
+
+@mixin reg-fontsize() {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+@mixin edit-label() {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 0 20px;
+}
+
+@mixin edit-text() {
+  width: 300px;
+  height: 30px;
+}
+
 .regform {
   display: flex;
   width: 55%;
@@ -44,40 +70,32 @@ margin-bottom: 5%;
 }
 
 .reg-name-label {
-  font-size: 24px;
-  line-height: 24px;
+  @include reg-label()
 }
 .reg-email-label {
-  font-size: 24px;
-  line-height: 24px;
+  @include reg-label()
 }
 .reg-pass-label {
   margin-right: 15px;
-  font-size: 24px;
-  line-height: 24px;
+  @include reg-label()
 }
 
 .reg-pass-conf-label {
-  font-size: 24px;
-  line-height: 24px;
+  @include reg-label()
 }
 
 .reg-name-field {
-  width: 200px;
-  height: 30px;
+  @include reg-field()
 }
 .reg-email-field {
-  width: 200px;
-  height: 30px;
+  @include reg-field()
 }
 .reg-pass-field {
-  width: 200px;
-  height: 30px;
+  @include reg-field()
 }
 
 .reg-pass-conf-field {
-  width: 200px;
-  height: 30px;
+  @include reg-field()
 }
 
 .fontsize {
@@ -126,8 +144,7 @@ input.login-edit {
       padding: 20px 10px;
     }
     &__label {
-      width: 200px;
-      height: 30px;
+      @include reg-field()
     }
     &__text {
       width: 300px;
@@ -136,25 +153,19 @@ input.login-edit {
   }
 }
 .edit-name-label {
-  font-size: 20px;
-  line-height: 20px;
-  padding: 0 20px;
+  @include edit-label()
 }
 
 .edit-email-label {
-  font-size: 20px;
-  line-height: 20px;
-  padding: 0 20px;
+  @include edit-label()
 }
 
 .edit-name-text {
-  width: 300px;
-  height: 30px;
+  @include edit-text()
 }
 
 .edit-email-text {
-  width: 300px;
-  height: 30px;
+  @include edit-text()
 }
 
 .error-devise {
