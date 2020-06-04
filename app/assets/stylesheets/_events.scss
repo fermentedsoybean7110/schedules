@@ -1,3 +1,12 @@
+@mixin events-formsize() {
+  color: black;
+  width: 200px;
+  height: 30px;
+  box-shadow: 0 0 7px #3498db;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+}
+
 .wrapper {
   display: flex;
 }
@@ -19,6 +28,7 @@
     background-color: rgb(46, 45, 45);
     align-items: center;
     &__user {
+      width: 400px;
       color: #ffffff;
       font-size: 19px;
       line-height: 19px;
@@ -105,12 +115,7 @@
       border-width: 2px;
       font-size: 18px;
       .formsize {
-        color: black;
-        width: 200px;
-        height: 30px;
-        box-shadow: 0 0 7px #3498db;
-        border: 1px solid #3498db;
-        border-radius: 5px;
+        @include events-formsize()
       }
     }
     &__body {
@@ -119,12 +124,7 @@
       font-weight: bold;
       font-size: 18px;
       .formsize {
-        color: black;
-        width: 200px;
-        height: 30px;
-        box-shadow: 0 0 7px #3498db;
-        border: 1px solid #3498db;
-        border-radius: 5px;
+        @include events-formsize()
       }
     }
     &__start {
@@ -133,12 +133,7 @@
       font-weight: bold;
       font-size: 18px;
       .formsize {
-        color: black;
-        width: 200px;
-        height: 30px;
-        box-shadow: 0 0 7px #3498db;
-        border: 1px solid #3498db;
-        border-radius: 5px;
+        @include events-formsize()
       }
     }
     &__end {
@@ -147,12 +142,7 @@
       font-weight: bold;
       font-size: 18px;
       .formsize {
-        color: black;
-        width: 200px;
-        height: 30px;
-        box-shadow: 0 0 7px #3498db;
-        border: 1px solid #3498db;
-        border-radius: 5px;
+        @include events-formsize()
       }
     }
     &__submit {
