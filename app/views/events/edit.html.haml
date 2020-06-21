@@ -7,11 +7,13 @@
         = current_user.name
       .side__center__icon
         .user-edit
-          = link_to edit_user_path(@user) do
+          = link_to edit_user_path(@user), class: 'icon' do
             = icon('fas', 'user-edit')
+            .arrow_box アカウント編集
         .user-logout
-          = link_to destroy_user_session_path, method: :delete do
+          = link_to destroy_user_session_path, class: 'icon', method: :delete do
             = icon('fas', 'sign-out-alt')
+            .arrow_box ログアウト
     .side__info
       .side__info__back
         = link_to "戻る", root_path
