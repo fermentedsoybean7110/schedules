@@ -195,3 +195,22 @@
   text-align: center;
   color: red;
 }
+
+.icon {
+  position   : relative;
+}
+.icon:hover .arrow_box {
+  display: inline;
+}
+.arrow_box {
+  border-radius: 10px;
+  position   : absolute;
+  display: none;
+  padding: 2px;
+  background-color: white;
+  width:150px;
+  top: 40px;
+  right : -40px;
+  font-size: 80%;
+  text-align: center;
+}

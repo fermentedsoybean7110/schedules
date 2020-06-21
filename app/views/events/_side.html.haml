@@ -6,11 +6,13 @@
       = current_user.name
     .side__center__icon
       .user-edit
-        = link_to edit_user_path(current_user) do
+        = link_to edit_user_path(current_user), class: 'icon' do
           = icon('fas', 'user-edit')
+          .arrow_box アカウント編集
       .user-logout
-        = link_to destroy_user_session_path, method: :delete do
+        = link_to destroy_user_session_path, class: 'icon', method: :delete do
           = icon('fas', 'sign-out-alt')
+          .arrow_box ログアウト
   .side__info
     .side__info__register
       = link_to 'スケジュール登録', new_event_path
